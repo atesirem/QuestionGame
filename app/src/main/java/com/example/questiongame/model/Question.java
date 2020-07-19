@@ -2,7 +2,7 @@ package com.example.questiongame.model;
 
 import java.io.Serializable;
 
-public class Questions implements Serializable {
+public class Question implements Serializable {
     private String question, answer1, answer2, rightAnswerText, wrongAnswerText;
     private int rightAnswerIndex, backToQuestionIndex;
 
@@ -64,7 +64,7 @@ public class Questions implements Serializable {
     }
 
 
-    public Questions(String question, String answer1, String answer2, int rightAnswerIndex, String rightAnswerText, String wrongAnswerText, int backToQuestionIndex) {
+    public Question(String question, String answer1, String answer2, int rightAnswerIndex, String rightAnswerText, String wrongAnswerText, int backToQuestionIndex) {
         this.question = question;
         this.answer1 = answer1;
         this.answer2 = answer2;

@@ -7,9 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.example.questiongame.data.Data;
-import com.example.questiongame.model.Questions;
+import com.example.questiongame.model.Question;
 
 public class MainActivity extends AppCompatActivity {
     private Button startButton;
@@ -26,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void parseIntent() {
-        Questions questions = (Questions) getIntent().getSerializableExtra("QuestionClass");
+        Question questions = (Question) getIntent().getSerializableExtra("QuestionClass");
         question.setText(questions.getQuestion());
         answer1.setText(questions.getAnswer1());
         answer2.setText(questions.getAnswer2());
@@ -45,5 +43,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    
+
 }
