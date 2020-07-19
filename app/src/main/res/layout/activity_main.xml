@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#001145"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:overScrollMode="ifContentScrolls"
+        >
+
+    <ImageView
+        android:id="@+id/coverImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#95a5a6"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/questionmarks"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4D000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="@string/quiz_game"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:textColor="#DFB5FD"
+                        />
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:id="@+id/startButton"
+            android:layout_marginTop="120dp"
+            android:text="@string/start"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>
